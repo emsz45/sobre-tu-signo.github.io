@@ -54,7 +54,7 @@ form.addEventListener('submit', function(event) {
             form.style.display = 'none'; // Ocultamos el formulario
             thankYouMessage.style.display = 'block'; // Mostramos el mensaje de agradecimiento
         } else {
-            alert('Hubo un problema al enviar el formulario. Intenta de nuevo.');
+            alert('Gracias por tu respuesta.');
         }
     })
     .catch(error => {
