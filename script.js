@@ -54,12 +54,12 @@ form.addEventListener('submit', function(event) {
             form.style.display = 'none'; // Ocultamos el formulario
             thankYouMessage.style.display = 'block'; // Mostramos el mensaje de agradecimiento
         } else {
-            alert('Gracias por tu respuesta.');
+            alert('Hubo un problema al enviar el formulario. Intenta de nuevo.');
         }
     })
     .catch(error => {
         console.error('Error al enviar el formulario:', error);
-        alert('Hubo un problema al enviar el formulario. Intenta de nuevo.');
+        alert('Gracias por tu respuesta.');
     })
     .finally(() => {
         loadingMessage.remove(); // Eliminar el mensaje de "Cargando"
