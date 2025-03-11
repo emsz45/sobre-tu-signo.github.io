@@ -1,0 +1,245 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff83e4;
+    background-image: url('fondo.jpg'); /* Añade la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen se quede fija al hacer scroll */
+    background-color: #bb62b3; /* Color de fondo de respaldo en caso de que la imagen no cargue */
+}
+
+header {
+    background-color: #b335a0;
+    background-image: url('vgg.jpg'); /* Añades la imagen de fondo aquí */
+    background-size: cover; /* Asegura que la imagen cubra todo el área del header */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed;
+    color: rgb(13, 12, 12);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+    font-size: 25px;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    color: black;
+    font-size: 27px; 
+}
+
+header .header-description {
+    font-size: 19px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(251, 190, 249);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Cards */
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgb(245, 244, 224);
+    width: 30%;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card button {
+    padding: 10px 20px;
+    background-color: #951b54;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.card button:hover {
+    background-color: #9f389f;
+}
+
+/* Modales */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(126, 49, 116, 0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: rgb(245, 244, 224);
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 8px;
+}
+
+/* Nuevo botón de cerrar en la esquina superior derecha */
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+}
+
+.top-right:hover {
+    color: rgb(153, 149, 149); /* Cambia de color al pasar el ratón */
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Formulario */
+.contact-form {
+    background-color: rgb(245, 244, 224);
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 30%; /* Ajustar el ancho del formulario */
+    margin-left: auto;  /* Centrar el formulario horizontalmente */
+    margin-right: auto;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.contact-form input {
+    margin-bottom: 10px;  /* Ajustar el margen entre los campos de texto */
+}
+
+.contact-form button {
+    background-color: #782d74;
+    color: rgb(245, 244, 224);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: #7a1d5d;
+}
+
+/* Aseguramos que los campos de entrada sean del mismo tamaño */
+.contact-form input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    /* Tarjetas */
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%; /* Se ajusta a 100% en pantallas pequeñas */
+    }
+
+    .modal-content {
+        width: 90%; /* Modal ocupa el 90% en pantallas pequeñas */
+    }
+
+    /* Formulario */
+    .contact-form {
+        padding: 15px; /* Reducir el padding en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Tarjetas en pantallas medianas (tabletas) */
+    .card {
+        width: 45%; /* Ajusta el ancho en tabletas */
+    }
+}
+

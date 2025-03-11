@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre tu signo</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+       <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                                <li><a>⭐ Sobre tu signo 🌙</a></li>
+                            </ul>
+        </nav>
+        <p class="header-description">🌟 Descubre información sobre todos los signos del zodiaco 🔮</p>
+    </header>
+
+    <main>
+        <section class="cards-container">
+            <div class="card">
+                <img src="aries.png" alt="Aries">
+                <h3>Aries ♈︎</h3>
+                <h4>21 de marzo al 19 de abril</h4>
+                <p>Energético, valiente y líder por naturaleza. Siempre busca nuevas aventuras.</p>
+                <button class="modal-trigger" data-modal="modal1">Ver más</button>
+            </div>
+            <div class="card">
+                <img src="tauro.png" alt="Tauro">
+                <h3>Tauro ♉︎</h3>
+                <h4>20 de abril y al 20 de mayo</h4>
+                <p>Persistente, práctico y amante de los placeres sensoriales. Valora la estabilidad y la seguridad.</p>
+                <button class="modal-trigger" data-modal="modal2">Ver más</button>
+            </div>
+            <div class="card">
+                <img src="geminis.png" alt="Géminis">
+                <h3>Géminis ♊︎</h3>
+                <h4>21 de mayo al 20 de junio</h4>
+                <p>Curioso, comunicativo y adaptable. Les encanta aprender y explorar nuevas ideas.</p>
+                <button class="modal-trigger" data-modal="modal3">Ver más</button>
+            </div>
+            <div class="card">
+                <img src="cancer.png" alt="Cáncer">
+                <h3>Cáncer ♋︎</h3>
+                <h4>21 de junio al 22 de julio</h4>
+                <p>Sensible, protector y emocional. Valoran mucho la familia y el hogar.</p>
+                <button class="modal-trigger" data-modal="modal4">Ver más</button>
+            </div>
+            <div class="card">
+                <img src="leo.png" alt="Leo">
+                <h3>Leo ♌︎</h3>
+                <h4>23 de julio al 22 de agosto</h4>
+                <p>Creativo, generoso y extrovertido. Les gusta ser el centro de atención y tienen gran confianza.</p>
+                <button class="modal-trigger" data-modal="modal5">Ver más</button>
+            </div>
+            <div class="card">
+                <img src="virgo.png" alt="Virgo">
+                <h3>Virgo ♍︎</h3>
+                <h4>23 de agosto al 22 de septiembre</h4>
+                <p>Perfeccionista, analítico y detallista. Les gusta la organización y la eficiencia.</p>
+                <button class="modal-trigger" data-modal="modal6">Ver más</button>
+            </div>
+            <div class="card">
+                <img src="libra.png" alt="Libra">
+                <h3>Libra ⚖️</h3>
+                <h4>23 de septiembre al 22 de octubre</h4>
+                <p>Equilibrado, sociable y justo. Buscan armonía en sus relaciones y en su entorno.</p>
+                <button class="modal-trigger" data-modal="modal7">Ver más</button>
+            </div>
+            <div class="card">
+                <img src="esc.png" alt="Escorpio">
+                <h3>Escorpio ♏︎</h3>
+                <h4>23 de octubre al 21 de noviembre</h4>
+                <p>Intenso, misterioso y apasionado. Son profundamente emocionales y leales.</p>
+                <button class="modal-trigger" data-modal="modal8">Ver más</button>
+            </div>
+            <div class="card">
+                <img src="sagi.png" alt="Sagitario">
+                <h3>Sagitario ♐︎</h3>
+                <h4>22 de noviembre al 21 de diciembre</h4>
+                <p>Optimista, aventurero y filosófico. Siempre buscan la libertad y el crecimiento personal.</p>
+                <button class="modal-trigger" data-modal="modal9">Ver más</button>
+            </div>
+            <div class="card">
+                <img src="capri.png" alt="Capricornio">
+                <h3>Capricornio ♑︎</h3>
+                <h4>22 de diciembre al 19 de enero</h4>
+                <p>Responsable, ambicioso y práctico. Tienen un fuerte enfoque en el éxito y la estabilidad.</p>
+                <button class="modal-trigger" data-modal="modal10">Ver más</button>
+            </div>
+            <div class="card">
+                <img src="acua.png" alt="Acuario">
+                <h3>Acuario ♒︎</h3>
+                <h4>20 de enero al 18 de febrero</h4>
+                <p>Innovador, independiente y humanitario. Les gusta pensar fuera de lo común y ayudar a los demás.</p>
+                <button class="modal-trigger" data-modal="modal11">Ver más</button>
+            </div>
+            <div class="card">
+                <img src="piscis.png" alt="Piscis">
+                <h3>Piscis ♓︎ </h3>
+                <h4>19 de febrero al 20 de marzo</h4>
+                <p>Soñador, empático y compasivo. Se sienten atraídos por las artes y tienen una conexión profunda con sus emociones.</p>
+                <button class="modal-trigger" data-modal="modal12">Ver más</button>
+            </div>
+        </section>
+
+        <!-- Modal 1 -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <button class="close-btn top-right" data-modal="modal1">&times;</button>
+                <h2>Sobre Aries ♈︎</h2>
+                <h3>Pros 💖</h3>
+        <ul>
+            <li>Están llenos de energía y entusiasmo.</li>
+            <li>Tienen una gran capacidad de liderazgo.</li>
+            <li>Son valientes y confiados.</li>
+            <li>Son muy activos y les gusta iniciar proyectos.</li>
+        </ul>
+        <h3>Contras 💔</h3>
+        <ul>
+            <li>Pueden ser impulsivos e impacientes.</li>
+            <li>A veces, pueden ser egoístas y egocéntricos.</li>
+            <li>Pueden tener dificultades para controlar su temperamento.</li>
+            <li>Pueden ser personas muy competitivas.</li>
+        </ul>
+        <h3>Características</h3>
+        <p><strong>Símbolo:</strong> El carnero.</p>
+        <p><strong>Elemento:</strong> Fuego.</p>
+        <p><strong>Planeta regente:</strong> Marte.</p>
+        <p><strong>Piedra preciosa:</strong> Diamante.</p>
+        <p><strong>Color:</strong> Rojo.</p>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <button class="close-btn top-right" data-modal="modal2">&times;</button>
+                <h2>Sobre Tauro ♉︎</h2>
+                <h3>Pros 💖</h3>
+        <ul>
+            <li>Son muy leales y confiables.</li>
+            <li>Tienen un gran sentido práctico y son muy trabajadores.</li>
+            <li>Son amantes de la belleza y el placer.</li>
+            <li>Son pacientes y persistentes.</li>
+        </ul>
+        <h3>Contras 💔</h3>
+        <ul>
+            <li>Pueden ser tercos y posesivos.</li>
+            <li>A veces, pueden ser materialistas y hedonistas.</li>
+            <li>Suelen tener dificultades para adaptarse a los cambios.</li>
+            <li>Pueden ser muy lentos para tomar decisiones.</li>
+        </ul>
+        <h3>Características</h3>
+        <p><strong>Símbolo:</strong> El toro.</p>
+        <p><strong>Elemento:</strong> Tierra.</p>
+        <p><strong>Planeta regente:</strong> Venus.</p>
+        <p><strong>Piedra preciosa:</strong> Esmeralda.</p>
+        <p><strong>Color:</strong> Verde.</p>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <button class="close-btn top-right" data-modal="modal3">&times;</button>
+                <h2>Sobre Géminis ♊︎</h2>
+                <h3>Pros 💖</h3>
+        <ul>
+            <li>Son muy versátiles y adaptables.</li>
+            <li>Tienen una mente rápida y curiosa.</li>
+            <li>Son excelentes comunicadores y sociales.</li>
+            <li>Su capacidad para aprender rápidamente es impresionante.</li>
+        </ul>
+        <h3>Contras 💔</h3>
+        <ul>
+            <li>Pueden ser indecisos y cambiar de opinión con frecuencia.</li>
+            <li>A veces, pueden parecer superficiales o poco comprometidos.</li>
+            <li>Pueden ser inconstantes en sus relaciones.</li>
+            <li>A veces, pueden ser demasiado nerviosos o ansiosos.</li>
+        </ul>
+        <h3>Características</h3>
+        <p><strong>Símbolo:</strong> Los gemelos.</p>
+        <p><strong>Elemento:</strong> Aire.</p>
+        <p><strong>Planeta regente:</strong> Mercurio.</p>
+        <p><strong>Piedra preciosa:</strong> Ágata.</p>
+        <p><strong>Color:</strong> Amarillo.</p>
+            </div>
+        </div>
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <button class="close-btn top-right" data-modal="modal4">&times;</button>
+                <h2>Sobre Cáncer ♋︎</h2>
+                <h3>Pros 💖</h3>
+                <ul>
+                    <li>Son muy leales y protectores.</li>
+                    <li>Tienen una gran empatía y son muy sensibles.</li>
+                    <li>Son muy familiares y valoran profundamente las relaciones cercanas.</li>
+                    <li>Son intuitivos y se preocupan por cuidar a los demás.</li>
+                </ul>
+                <h3>Contras 💔</h3>
+                <ul>
+                    <li>Suelen ser demasiado emocionales y susceptibles.</li>
+                    <li>A veces, pueden a ser muy reservados o introvertidos.</li>
+                    <li>Suelen ser propensos a la melancolía o a sentirse inseguros.</li>
+                    <li>Les cuesta dejar ir el pasado y pueden ser rencorosos.</li>
+                </ul>
+                <h3>Características</h3>
+                <p><strong>Símbolo:</strong> El cangrejo.</p>
+                <p><strong>Elemento:</strong> Agua.</p>
+                <p><strong>Planeta regente:</strong> La Luna.</p>
+                <p><strong>Piedra preciosa:</strong> Perla.</p>
+                <p><strong>Color:</strong> Blanco y plateado.</p>
+            </div>
+        </div>
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <button class="close-btn top-right" data-modal="modal5">&times;</button>
+                <h2>Sobre Leo ♌︎</h2>
+                <h3>Pros 💖</h3>
+        <ul>
+            <li>Son muy carismáticos y extrovertidos.</li>
+            <li>Son líderes naturales, con mucha energía y vitalidad.</li>
+            <li>Son generosos y protectores con sus seres queridos.</li>
+            <li>Tienen una gran confianza en sí mismos y en sus habilidades.</li>
+        </ul>
+        <h3>Contras 💔</h3>
+        <ul>
+            <li>Pueden ser arrogantes o demasiado orgullosos.</li>
+            <li>A veces, tienden a buscar demasiada atención o reconocimiento.</li>
+            <li>Pueden ser muy dominantes o tener dificultad para aceptar críticas.</li>
+            <li>A veces, pueden ser tercos o egocéntricos.</li>
+        </ul>
+        <h3>Características</h3>
+        <p><strong>Símbolo:</strong> El león.</p>
+        <p><strong>Elemento:</strong> Fuego.</p>
+        <p><strong>Planeta regente:</strong> El Sol.</p>
+        <p><strong>Piedra preciosa:</strong> Rubí.</p>
+        <p><strong>Color:</strong> Dorado y amarillo.</p>
+            </div>
+        </div>
+        <div id="modal6" class="modal">
+            <div class="modal-content">
+                <button class="close-btn top-right" data-modal="modal6">&times;</button>
+                <h2>Sobre Virgo ♍︎</h2>
+                <h3>Pros 💖</h3>
+        <ul>
+            <li>Son personas muy detallistas y perfeccionistas.</li>
+            <li>Tienen una gran capacidad analítica y lógica.</li>
+            <li>Son organizados y responsables.</li>
+            <li>Son muy humildes y serviciales.</li>
+        </ul>
+        <h3>Contras 💔</h3>
+        <ul>
+            <li>Pueden ser excesivamente críticos, tanto con ellos mismos como con los demás.</li>
+            <li>A veces, tienden a preocuparse en exceso o ser demasiado reservados.</li>
+            <li>Su necesidad de perfección puede llevarles a ser demasiado exigentes.</li>
+            <li>Pueden tener dificultades para relajarse y disfrutar del momento.</li>
+        </ul>
+        <h3>Características</h3>
+        <p><strong>Símbolo:</strong> La virgen.</p>
+        <p><strong>Elemento:</strong> Tierra.</p>
+        <p><strong>Planeta regente:</strong> Mercurio.</p>
+        <p><strong>Piedra preciosa:</strong> Zafiro.</p>
+        <p><strong>Color:</strong> Verde y beige.</p>
+            </div>
+        </div>
+        <div id="modal7" class="modal">
+            <div class="modal-content">
+                <button class="close-btn top-right" data-modal="modal7">&times;</button>
+                <h2>Sobre Libra ⚖️</h2>
+                <h3>Pros 💖</h3>
+        <ul>
+            <li>Son personas muy equilibradas y justas.</li>
+            <li>Tienen un gran sentido de la armonía y la diplomacia.</li>
+            <li>Son sociables y les encanta estar rodeados de gente.</li>
+            <li>Su capacidad para ver ambas caras de una situación les hace excelentes mediadores.</li>
+        </ul>
+        <h3>Contras 💔</h3>
+        <ul>
+            <li>Pueden ser indecisos y tener dificultades para tomar decisiones.</li>
+            <li>A veces, evitan confrontaciones y pueden ser demasiado complacientes.</li>
+            <li>Pueden ser superficiales o preocuparse demasiado por la apariencia.</li>
+            <li>Su necesidad de equilibrar todo puede hacer que no tomen partido en situaciones importantes.</li>
+        </ul>
+        <h3>Características</h3>
+        <p><strong>Símbolo:</strong> La balanza.</p>
+        <p><strong>Elemento:</strong> Aire.</p>
+        <p><strong>Planeta regente:</strong> Venus.</p>
+        <p><strong>Piedra preciosa:</strong> Opalo.</p>
+        <p><strong>Color:</strong> Azul y verde claro.</p>
+            </div>
+        </div>
+        <div id="modal8" class="modal">
+            <div class="modal-content">
+                <button class="close-btn top-right" data-modal="modal8">&times;</button>
+                <h2>Sobre Escorpio ♏︎</h2>
+                <h3>Pros 💖</h3>
+        <ul>
+            <li>Son personas intensas, apasionadas y muy leales.</li>
+            <li>Tienen una gran intuición y capacidad para entender a los demás.</li>
+            <li>Son muy determinados y luchadores, no se rinden fácilmente.</li>
+            <li>Son extremadamente valientes y pueden enfrentar situaciones difíciles con coraje.</li>
+        </ul>
+        <h3>Contras 💔</h3>
+        <ul>
+            <li>Pueden ser celosos y posesivos en sus relaciones.</li>
+            <li>A veces, son muy reservados y les cuesta confiar en los demás.</li>
+            <li>Su naturaleza intensa puede llevarles a ser controladores o vengativos.</li>
+            <li>Tienden a ser muy críticos consigo mismos y con los demás.</li>
+        </ul>
+        <h3>Características</h3>
+        <p><strong>Símbolo:</strong> El escorpión.</p>
+        <p><strong>Elemento:</strong> Agua.</p>
+        <p><strong>Planeta regente:</strong> Plutón (y Marte tradicionalmente).</p>
+        <p><strong>Piedra preciosa:</strong> Topacio.</p>
+        <p><strong>Color:</strong> Rojo oscuro y negro.</p>
+            </div>
+        </div>
+        <div id="modal9" class="modal">
+            <div class="modal-content">
+                <button class="close-btn top-right" data-modal="modal9">&times;</button>
+                <h2>Sobre Sagitario ♐︎</h2>
+                <h3>Pros 💖</h3>
+        <ul>
+            <li>Son personas optimistas, extrovertidas y llenas de energía.</li>
+            <li>Tienen una gran pasión por la aventura y la exploración.</li>
+            <li>Son sinceros y directos, siempre dicen lo que piensan.</li>
+            <li>Son independientes y tienen un fuerte deseo de libertad.</li>
+        </ul>
+        <h3>Contras 💔</h3>
+        <ul>
+            <li>Pueden ser imprudentes y actuar sin pensar en las consecuencias.</li>
+            <li>A veces, su franqueza puede ser demasiado directa y herir a los demás.</li>
+            <li>Pueden ser impacientes y tener dificultades para comprometerse.</li>
+            <li>Su amor por la libertad puede llevarlos a evitar responsabilidades o compromisos.</li>
+        </ul>
+        <h3>Características</h3>
+        <p><strong>Símbolo:</strong> El arquero.</p>
+        <p><strong>Elemento:</strong> Fuego.</p>
+        <p><strong>Planeta regente:</strong> Júpiter.</p>
+        <p><strong>Piedra preciosa:</strong> Turquesa.</p>
+        <p><strong>Color:</strong> Púrpura y azul.</p>
+            </div>
+        </div>
+        <div id="modal10" class="modal">
+            <div class="modal-content">
+                <button class="close-btn top-right" data-modal="modal10">&times;</button>
+                <h2>Sobre Capricornio ♑︎</h2>
+                <h3>Pros 💖</h3>
+        <ul>
+            <li>Son personas muy responsables, trabajadoras y ambiciosas.</li>
+            <li>Tienen una gran capacidad para la organización y la planificación.</li>
+            <li>Son leales y confiables en sus relaciones personales y profesionales.</li>
+            <li>Tienen una mente práctica y una gran capacidad para resolver problemas.</li>
+        </ul>
+        <h3>Contras 💔</h3>
+        <ul>
+            <li>Pueden ser muy pesimistas o negativos, especialmente cuando las cosas no salen como esperan.</li>
+            <li>A veces, pueden parecer fríos o distantes, ya que tienden a ser reservados.</li>
+            <li>Son muy exigentes consigo mismos, lo que puede llevarlos al agotamiento.</li>
+            <li>Tienden a centrarse tanto en sus objetivos que pueden perder de vista el disfrute del presente.</li>
+        </ul>
+        <h3>Características</h3>
+        <p><strong>Símbolo:</strong> La cabra montesa.</p>
+        <p><strong>Elemento:</strong> Tierra.</p>
+        <p><strong>Planeta regente:</strong> Saturno.</p>
+        <p><strong>Piedra preciosa:</strong> Granate.</p>
+        <p><strong>Color:</strong> Gris, negro y marrón.</p>
+            </div>
+        </div>
+        <div id="modal11" class="modal">
+            <div class="modal-content">
+                <button class="close-btn top-right" data-modal="modal11">&times;</button>
+                <h2>Sobre Acuario ♒︎</h2>
+                <h3>Pros 💖</h3>
+        <ul>
+            <li>Son personas creativas, innovadoras y con una mente abierta.</li>
+            <li>Tienen una gran capacidad para pensar de manera original y fuera de lo común.</li>
+            <li>Son muy humanitarios y se preocupan por el bienestar de los demás.</li>
+            <li>Valoran la independencia y buscan constantemente la libertad.</li>
+        </ul>
+        <h3>Contras 💔</h3>
+        <ul>
+            <li>Pueden ser distantes o fríos emocionalmente, lo que a veces puede parecer desinterés.</li>
+            <li>Su tendencia a ser rebeldes puede llevarlos a tener dificultades para adaptarse a reglas o normas.</li>
+            <li>A veces, pueden ser impredecibles o excéntricos en su comportamiento.</li>
+            <li>Les cuesta comprometerse a largo plazo en relaciones personales o laborales.</li>
+        </ul>
+        <h3>Características</h3>
+        <p><strong>Símbolo:</strong> El aguador.</p>
+        <p><strong>Elemento:</strong> Aire.</p>
+        <p><strong>Planeta regente:</strong> Urano (y Saturno tradicionalmente).</p>
+        <p><strong>Piedra preciosa:</strong> Amatista.</p>
+        <p><strong>Color:</strong> Azul eléctrico y plateado.</p>
+            </div>
+        </div>
+
+            <div id="modal12" class="modal">
+                <div class="modal-content">
+                    <button class="close-btn top-right" data-modal="modal12">&times;</button>
+                    <h2>Sobre Piscis ♓︎</h2>
+                    <h3>Pros 💖</h3>
+        <ul>
+            <li>Muy empáticos y compasivos.</li>
+            <li>Tienen una gran intuición y creatividad.</li>
+            <li>Son soñadores, románticos y espirituales.</li>
+            <li>Son muy tolerantes.</li>
+        </ul>
+        <h3>Contras 💔</h3>
+        <ul>
+            <li>Pueden ser indecisos y fácilmente influenciables.</li>
+            <li>Tienden a ser escapistas y a evitar la realidad.</li>
+            <li>Pueden ser demasiado sensibles y susceptibles.</li>
+            <li>Suelen dejarse llevar demasiado por sus emociones.</li>
+        </ul>
+        <h3>Características</h3>
+        <p><strong>Símbolo:</strong> Dos peces nadando en direcciones opuestas, que simbolizan la dualidad y la capacidad de fluir con las emociones.</p>
+        <p><strong>Elemento:</strong> Agua.</p>
+        <p><strong>Planeta regente:</strong> Neptuno.</p>
+        <p><strong>Piedra preciosa:</strong> Aguamarina.</p>
+        <p><strong>Color:</strong> El verde mar y el violeta.</p>
+                </div>
+            
+        </div>
+
+        <!-- Formulario -->
+        <section class="contact-form">
+            <h2>¿Cuál es tu signo? ✨</h2>
+
+           <form action="https://formspree.io/f/xldgqene" method="POST">
+                <label for="name">Nombre (opcional):</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="birthdate">Fecha de nacimiento (opcional):</label>
+                <input type="date" id="birthdate" name="birthdate">
+                
+                <label for="sign">Tu Signo Zodiacal:</label>
+                <select id="sign" name="sign" required>
+                    <option value="" disabled selected>Selecciona tu signo</option>
+                    <option value="aries">Aries (21 de marzo - 19 de abril)</option>
+                    <option value="taurus">Tauro (20 de abril - 20 de mayo)</option>
+                    <option value="gemini">Géminis (21 de mayo - 20 de junio)</option>
+                    <option value="cancer">Cáncer (21 de junio - 22 de julio)</option>
+                    <option value="leo">Leo (23 de julio - 22 de agosto)</option>
+                    <option value="virgo">Virgo (23 de agosto - 22 de septiembre)</option>
+                    <option value="libra">Libra (23 de septiembre - 22 de octubre)</option>
+                    <option value="scorpio">Escorpio (23 de octubre - 21 de noviembre)</option>
+                    <option value="sagittarius">Sagitario (22 de noviembre - 21 de diciembre)</option>
+                    <option value="capricorn">Capricornio (22 de diciembre - 19 de enero)</option>
+                    <option value="aquarius">Acuario (20 de enero - 18 de febrero)</option>
+                    <option value="pisces">Piscis (19 de febrero - 20 de marzo)</option>
+                </select>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="thank-you-message" style="display:none;">
+                <h3>¡Gracias por tu respuesta!</h3>
+            </div>
+        </section>
+        
+        
+
+    <footer>
+        <p>&copy; 2025 Creado por EMSZ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
