@@ -163,55 +163,49 @@ main {
     margin-top: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    width: 30%; /* Ajustar el ancho del formulario */
+    width: 30%; /* Ajustamos el ancho del formulario */
     margin-left: auto;  /* Centrar el formulario horizontalmente */
     margin-right: auto;
 }
 
+/* Estilos para las etiquetas y los campos del formulario */
 .contact-form h2 {
     margin-bottom: 20px;
+    text-align: center; /* Centra el título */
 }
 
+/* Espaciado y alineación para los campos del formulario */
 .contact-form label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px; /* Más espacio entre la etiqueta y el campo */
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .contact-form input,
-.contact-form textarea {
-    width: 40%;
+.contact-form select {
+    width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Espacio entre los campos */
     border-radius: 4px;
     border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-.contact-form input {
-    margin-bottom: 10px;  /* Ajustar el margen entre los campos de texto */
-}
-
+/* Estilo del botón */
 .contact-form button {
     background-color: #782d74;
     color: rgb(245, 244, 224);
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    width: 100%; /* Hacer que el botón ocupe el 100% del ancho del formulario */
+    margin-top: 10px; /* Espacio entre el último campo y el botón */
 }
 
 .contact-form button:hover {
     background-color: #7a1d5d;
-}
-
-/* Aseguramos que los campos de entrada sean del mismo tamaño */
-.contact-form input {
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.contact-form label {
-    margin-bottom: 8px;
-    font-size: 14px;
 }
 
 /* Responsividad */
@@ -230,16 +224,10 @@ main {
         width: 90%; /* Modal ocupa el 90% en pantallas pequeñas */
     }
 
-    /* Formulario */
+    /* Formulario en pantallas pequeñas */
     .contact-form {
+        width: 100%; /* Asegura que el formulario ocupe el 100% en pantallas pequeñas */
+        max-width: 400px; /* Limita el ancho máximo para que no sea demasiado ancho */
         padding: 15px; /* Reducir el padding en pantallas pequeñas */
     }
 }
-
-@media (max-width: 1024px) {
-    /* Tarjetas en pantallas medianas (tabletas) */
-    .card {
-        width: 45%; /* Ajusta el ancho en tabletas */
-    }
-}
-
