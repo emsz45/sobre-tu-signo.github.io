@@ -22,6 +22,8 @@ header {
     text-align: center;
     font-family: 'Oleo Script', cursive;
     font-size: 25px;
+    width: 100%; /* Asegura que el header ocupe el 100% del ancho */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
 header nav ul li a {
@@ -61,6 +63,8 @@ main {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 0 auto; /* Centra los elementos */
+    max-width: 1200px; /* Limita el ancho máximo */
 }
 
 .card {
@@ -210,14 +214,21 @@ main {
 
 /* Responsividad */
 @media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 20px 10px; /* Ajusta el padding para que ocupe todo el ancho */
+    }
+
     /* Tarjetas */
     .cards-container {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .card {
-        width: 100%; /* Se ajusta a 100% en pantallas pequeñas */
+        width: 80%; /* Ajusta las tarjetas para que se vean correctamente en pantallas pequeñas */
+        margin: 15px 0;
     }
 
     .modal-content {
@@ -226,7 +237,7 @@ main {
 
     /* Formulario en pantallas pequeñas */
     .contact-form {
-        width: 100%; /* Asegura que el formulario ocupe el 100% en pantallas pequeñas */
+        width: 80%; /* Asegura que el formulario ocupe el 100% en pantallas pequeñas */
         max-width: 400px; /* Limita el ancho máximo para que no sea demasiado ancho */
         padding: 15px; /* Reducir el padding en pantallas pequeñas */
     }
