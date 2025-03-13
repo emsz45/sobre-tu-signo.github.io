@@ -133,20 +133,25 @@ main {
     width: 100%;
     height: 100%;
     background-color: rgba(126, 49, 116, 0.4);
+    overflow: auto;
 }
 
 .modal-content {
     position: relative;
-    background-image: url('vgg.jpg'); /* Añade la imagen de fondo aquí */
-    background-size: cover; /* Asegura que la imagen cubra toda el área del modal */
-    background-position: center; /* Centra la imagen */
-    background-attachment: fixed; /* Hace que la imagen se quede fija al hacer scroll */
-    color: rgb(0, 0, 0); /* Cambia el color del texto para que sea legible */
+    background-image: url('vgg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
     margin: 10% auto;
     padding: 20px;
     width: 50%;
+    max-width: 700px; /* Limita el ancho máximo del modal */
+    min-height: 40vh; /* Ajusta la altura mínima del modal */
+    max-height: 80vh; /* Limita la altura máxima del modal */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
 }
 
 /* Nuevo botón de cerrar en la esquina superior derecha */
