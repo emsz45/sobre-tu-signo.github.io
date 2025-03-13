@@ -1,4 +1,3 @@
-/* Estilo general */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -68,13 +67,31 @@ main {
 }
 
 .card {
-    background-color: rgb(245, 244, 224);
+    background-image: url('vgg.jpg'); /* Añades la imagen de fondo aquí */
+    background-size: cover; /* Asegura que la imagen cubra toda el área de la tarjeta */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen se quede fija al hacer scroll */
+    color: rgb(0, 0, 0);
     width: 30%;
     margin: 15px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    position: relative; /* Añadido para el efecto de capa */
+    overflow: hidden; /* Asegura que no haya desbordamiento de la imagen */
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Capa semitransparente */
+    border-radius: 8px;
+    z-index: -1; /* Asegura que la capa esté detrás del contenido */
 }
 
 .card img {
@@ -120,11 +137,16 @@ main {
 
 .modal-content {
     position: relative;
-    background-color: rgb(245, 244, 224);
+    background-image: url('vgg.jpg'); /* Añade la imagen de fondo aquí */
+    background-size: cover; /* Asegura que la imagen cubra toda el área del modal */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen se quede fija al hacer scroll */
+    color: rgb(0, 0, 0); /* Cambia el color del texto para que sea legible */
     margin: 10% auto;
     padding: 20px;
     width: 50%;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Nuevo botón de cerrar en la esquina superior derecha */
@@ -162,7 +184,9 @@ main {
 
 /* Formulario */
 .contact-form {
-    background-color: rgb(245, 244, 224);
+    background-image: url('vgg.jpg'); /* Añade la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda el área del formulario */
+    background-position: center; /* Centra la imagen */
     padding: 20px;
     margin-top: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -194,6 +218,7 @@ main {
     border-radius: 4px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    background-color: rgba(251, 229, 211, 0.8); /* Fondo blanco con opacidad */
 }
 
 /* Estilo del botón */
